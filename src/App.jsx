@@ -28,6 +28,7 @@ function App() {
 
   return (
     <div className="App">
+      <div className="bg-stars"></div>
       {view === 'intro' && <WelcomeScreen onStart={handleStart} />}
       {view === 'dashboard' && <Dashboard onSelectEmotion={handleSelectEmotion} />}
       {view === 'comfort' && <ComfortDisplay emotion={selectedEmotion} onBack={handleBackToDashboard} />}
