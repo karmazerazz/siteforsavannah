@@ -2,23 +2,45 @@ import React from 'react';
 
 const WelcomeScreen = ({ onStart }) => {
   return (
-    <div className="glass-panel" style={{ textAlign: 'center', padding: 'var(--panel-padding)', animation: 'fadeIn 2s ease-in' }}>
-      <h1 className="hero-title">
-        Je t'aime
-      </h1>
-      <div className="hearttrace" style={{ fontSize: 'clamp(3rem, 10vw, 5rem)', marginBottom: '2rem' }}>
-        ❤️
+    <div className="glass-card" style={{ textAlign: 'center' }}>
+      <div className="big-icon-floating">
+        ✨
       </div>
-      <p className="text-body">
-        Un petit endroit juste pour toi, quand tu en as besoin.
+      <h1 className="title-celestial">
+        L'Amour Céleste
+      </h1>
+      <h2 className="title-hand">
+        pour ma Savannah
+      </h2>
+      <p style={{ 
+        fontSize: '1.2rem', 
+        color: 'var(--text-muted)', 
+        marginBottom: '3rem', 
+        letterSpacing: '1px',
+        maxWidth: '500px',
+        margin: '0 auto 3rem'
+      }}>
+        Un sanctuaire éthéré où mes mots t'accompagnent, <br/>
+        à chaque instant, à chaque émotion.
       </p>
+      
       <button 
-        className="btn-emotion" 
+        className="btn-celestial" 
         onClick={onStart}
-        style={{ fontSize: '1.5rem', padding: '1rem 3rem' }}
+        style={{ maxWidth: '300px', margin: '0 auto' }}
       >
-        Entrer
+        <span>🔓</span> Ouvrir mon cœur
       </button>
+      
+      <div style={{ 
+        marginTop: '3rem', 
+        fontSize: '0.9rem', 
+        color: 'var(--primary)', 
+        opacity: 0.6,
+        fontStyle: 'italic'
+      }}>
+        conçu avec tout mon être
+      </div>
     </div>
   );
 };
